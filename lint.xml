@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res\layout\led_widget_layout.xml" />
+    </issue>
+    <issue id="PxUsage">
+        <ignore path="res\layout\led_widget_layout.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res\layout\led_widget_layout.xml" />
+    </issue>
+</lint>
