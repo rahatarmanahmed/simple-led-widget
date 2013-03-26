@@ -27,6 +27,7 @@ public class LEDWidgetProvider extends AppWidgetProvider
 		// Set pending intent to call the Service
 		Intent intent = new Intent(context, LEDService.class);
 		intent.setAction(LEDService.ACTION_TOGGLE_LED);
+		
 		PendingIntent pIntent = PendingIntent.getService(context, 0, intent,
 				PendingIntent.FLAG_UPDATE_CURRENT);
 

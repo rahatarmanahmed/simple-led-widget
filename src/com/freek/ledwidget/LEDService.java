@@ -20,8 +20,9 @@ public class LEDService extends Service
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId)
 	{
-		isLEDOn = toggleLED();
-		return super.onStartCommand(intent, flags, startId);
+		if(intent.getAction().equals(ACTION_TOGGLE_LED))
+			isLEDOn = toggleLED();
+		return Service.START_NOT_STICKY;
 	}
 
 	@Override
@@ -37,6 +38,14 @@ public class LEDService extends Service
 		isLEDOn = false;
 	}
 
+	@Override
+	public void onDestroy()
+	{
+		if(camera != null)
+			turnLEDOff();
+		super.onDestroy();
+	}
+	
 	/**
 	 * Toggles the LED
 	 * 
