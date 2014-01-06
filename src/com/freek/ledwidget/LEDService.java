@@ -2,11 +2,13 @@ package com.freek.ledwidget;
 
 import java.io.IOException;
 
+import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Intent;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
+import android.hardware.Camera.PreviewCallback;
 import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
@@ -16,6 +18,7 @@ public class LEDService extends Service
 	public static final String ACTION_TOGGLE_LED = "com.freek.ledwidget.LEDWidgetProvider.ACTION_TOGGLE_LED";
 	boolean isLEDOn;
 	Camera camera;
+	SurfaceTexture surfaceTexture;
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId)
@@ -83,16 +86,29 @@ public class LEDService extends Service
 		// Here I pass it a dummy Surface Texture to make it happy.
 		try
 		{
+			Log.d("LED", "beginning turnLEDOn()");
+			Log.d("LED", "opening camera");
 			camera = Camera.open();
-			camera.setPreviewTexture(new SurfaceTexture(0));
-			camera.startPreview();
+			
+			Log.d("LED", "setting parameters");
 			Parameters p = camera.getParameters();
 			p.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
 			camera.setParameters(p);
+			
+			Log.d("LED", "starting preview");
+			camera.startPreview();
+
+			Log.d("LED", "setting preview texture");
+			surfaceTexture = new SurfaceTexture(0);
+			camera.setPreviewTexture(surfaceTexture);
+			
+			Log.d("LED", "updating widgets");
 			// Now update the widgets to reflect the change.
 			Intent intent = new Intent(this, LEDWidgetProvider.class);
 			intent.setAction(LEDWidgetProvider.UPDATE_WIDGET_ON);
 			sendBroadcast(intent);
+			
+			Log.d("LED", "ending turnLEDOn()");
 		} catch (Exception e) {
 			e.printStackTrace();
 			toast("Unable to turn on LED");
@@ -100,14 +116,20 @@ public class LEDService extends Service
 		
 	}
 
+	@SuppressLint("NewApi")
 	private void turnLEDOff()
 	{
 		if (camera != null)
 		{
-			// Stopping the camera is enough to turn off the LED
-			camera.stopPreview();
-			camera.release();
-			camera = null;
+			try
+			{
+				// Stopping the camera is enough to turn off the LED
+				camera.stopPreview();
+				camera.release();
+				camera = null;
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		} else
 			throw new NullPointerException("Camera doesn't exist to turn off.");
 		
