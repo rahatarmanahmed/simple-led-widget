@@ -5,7 +5,7 @@
     android:updatePeriodMillis="0"
     android:initialLayout="@layout/led_widget_layout"
     android:initialKeyguardLayout="@layout/led_widget_lockscreen_layout"
-    android:previewImage="@drawable/ic_launcher"
+    android:previewImage="@drawable/preview"
     android:resizeMode="horizontal|vertical"
     android:widgetCategory="home_screen|keyguard"
     >

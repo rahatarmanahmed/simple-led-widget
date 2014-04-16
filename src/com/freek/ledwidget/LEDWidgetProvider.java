@@ -11,7 +11,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.RemoteViews;
-import android.widget.Toast;
 
 public class LEDWidgetProvider extends AppWidgetProvider
 {
@@ -183,15 +182,5 @@ public class LEDWidgetProvider extends AppWidgetProvider
 //			manager.updateAppWidget(thisWidget, views);
 		}
 
-	}
-
-	/**
-	 * Silly convenience method for making toasts.
-	 * 
-	 * @param msg
-	 */
-	private void toast(Context context, String msg)
-	{
-		Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
 	}
 }

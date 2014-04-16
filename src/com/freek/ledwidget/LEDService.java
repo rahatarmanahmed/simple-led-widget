@@ -82,6 +82,7 @@ public class LEDService extends Service
 		return false;
 	}
 
+	@SuppressLint("Wakelock")
 	private void turnLEDOn() throws IOException
 	{
 		Log.d("LED", "Beginning turnLEDOn()");
@@ -176,9 +177,5 @@ public class LEDService extends Service
 	private void toast(String msg)
 	{
 		Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
-	}
-	private void log(String msg)
-	{
-		Log.d("LED",msg);
 	}
 }
