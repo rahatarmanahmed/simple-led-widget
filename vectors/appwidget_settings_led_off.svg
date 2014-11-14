@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64"
-   height="64"
+   width="24"
+   height="24"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="led_off.svg"
+   sodipodi:docname="appwidget_settings_led_off.svg"
    inkscape:export-filename="C:\Users\Rahat\Dropbox\Java\LEDWidget\vectors\appwidget_settings_led_off.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -58,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,72 +66,71 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-988.36218)">
+     transform="translate(0,-1028.3622)">
     <path
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
-       d="m 32,1004.8622 c -6.627417,0 -12,5.3726 -12,12 0,3.0749 1.160676,5.8766 3.0625,8 0.01205,0.01 0.01931,0.022 0.03125,0.031 0.341197,0.3782 0.707444,0.7304 1.09375,1.0625 3.13529,3.6213 0.17623,7.0881 3.8125,8.9063 l 8,0 c 3.63627,-1.8182 0.686014,-5.285 3.8125,-8.9063 0.386306,-0.3321 0.752553,-0.6843 1.09375,-1.0625 0.0098,-0.011 0.02146,-0.02 0.03125,-0.031 1.901824,-2.1234 3.0625,-4.9251 3.0625,-8 0,-6.6274 -5.372583,-12 -12,-12 z"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
+       d="m 12,1034.5497 c -2.485281,0 -4.5,2.0147 -4.5,4.5 0,1.1531 0.435254,2.2037 1.148438,3 0.0045,0 0.0072,0.01 0.01172,0.012 0.127949,0.1418 0.265292,0.2739 0.410157,0.3985 1.175733,1.3579 0.06609,2.658 1.429687,3.3398 l 3,0 c 1.363601,-0.6818 0.257255,-1.9819 1.429687,-3.3398 0.144865,-0.1246 0.282208,-0.2567 0.410157,-0.3985 0.0037,0 0.008,-0.01 0.01172,-0.012 0.713184,-0.7963 1.148438,-1.8469 1.148438,-3 0,-2.4853 -2.014719,-4.5 -4.5,-4.5 z"
        id="path3759"
        inkscape:connector-curvature="0" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
        id="rect3765"
-       width="8"
-       height="3"
-       x="28"
-       y="1035.8622"
-       ry="0.38804638" />
+       width="3"
+       height="1.125"
+       x="10.5"
+       y="1046.1747"
+       ry="0.14551739" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
        id="rect3765-7"
-       width="6"
-       height="3"
-       x="29"
-       y="1039.8622"
-       ry="0.38804638" />
+       width="2.25"
+       height="1.125"
+       x="10.875"
+       y="1047.6747"
+       ry="0.14551739" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
        id="rect3019"
-       width="4"
-       height="10"
-       x="30"
-       y="2"
-       transform="translate(0,988.36218)"
-       ry="0.38804638" />
+       width="1.5"
+       height="3.75"
+       x="11.25"
+       y="1029.1122"
+       ry="0.14551739" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
        id="rect3019-1"
-       width="4"
-       height="10"
-       x="1014.8622"
-       y="-58"
-       ry="0.38804638"
+       width="1.5"
+       height="3.75"
+       x="1038.2997"
+       y="-21.75"
+       ry="0.14551739"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
        id="rect3019-1-7"
-       width="4"
-       height="10"
-       x="1014.8622"
-       y="-16"
-       ry="0.38804638"
+       width="1.5"
+       height="3.75"
+       x="1038.2997"
+       y="-6"
+       ry="0.14551739"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
        id="rect3019-1-7-4"
-       width="4"
-       height="10"
-       x="694.70062"
-       y="-724.03021"
-       ry="0.38804638"
+       width="1.5"
+       height="3.75"
+       x="725.59558"
+       y="-736.59412"
+       ry="0.14551739"
        transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" />
     <rect
-       style="fill:#ffffff;fill-opacity:0.3019608;stroke:none"
+       style="fill:#ffffff;fill-opacity:0.30196078;stroke:none"
        id="rect3019-1-7-4-5"
-       width="4"
-       height="10"
-       x="-744.36469"
-       y="-678.36615"
-       ry="0.38804638"
+       width="1.5"
+       height="3.75"
+       x="-744.21954"
+       y="-719.47015"
+       ry="0.14551739"
        transform="matrix(-0.70710678,-0.70710678,0.70710678,-0.70710678,0,0)" />
   </g>
 </svg>
