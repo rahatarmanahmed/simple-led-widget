@@ -3,5 +3,6 @@
     <string name="app_name">Simple LED Widget</string>
     <string name="notif_led_on">LED is ON</string>
     <string name="notif_tap_off">Tap to turn off.</string>
-
+    <string name="error_camera">Unable to open camera</string>
+    <string name="error_led">Unable to turn on LED</string>
 </resources>

@@ -1,7 +1,5 @@
 package com.freek.ledwidget;
 
-import java.io.IOException;
-
 import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -18,6 +16,8 @@ import android.os.PowerManager.WakeLock;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
+
+import java.io.IOException;
 
 public class LEDService extends Service
 {
@@ -83,7 +83,7 @@ public class LEDService extends Service
 
 		} catch (Exception e)
 		{
-			toast("Unable to open camera.");
+			toast(getString(R.string.error_camera));
 			e.printStackTrace();
 		}
 		return false;
@@ -137,8 +137,8 @@ public class LEDService extends Service
 			NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 			Notification notification = new NotificationCompat.Builder(this)
 				.setSmallIcon(R.drawable.appwidget_settings_led_on)
-				.setContentTitle("LED is ON")
-				.setContentText("Tap to turn off.")
+				.setContentTitle(getString(R.string.notif_led_on))
+				.setContentText(getString(R.string.notif_tap_off))
 				.setPriority(NotificationCompat.PRIORITY_HIGH)
 				.setOngoing(true)
 				.setContentIntent(pendingIntent)
@@ -147,7 +147,7 @@ public class LEDService extends Service
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			toast("Unable to turn on LED");
+			toast(getString(R.string.error_led));
 		}
 		Log.d("LED", "Ending turnLEDOn()");		
 	}
