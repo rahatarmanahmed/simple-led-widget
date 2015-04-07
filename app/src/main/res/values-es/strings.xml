@@ -3,6 +3,6 @@
     <string name="app_name">Widget Simple de Linterna</string>
     <string name="notif_led_on">Linterna encendida</string>
     <string name="notif_tap_off">Toca para apagar.</string>
-    <string name="error_camera">Incapaz abrir la cámara</string>
-    <string name="error_led">Incapaz de encender linterna</string>
+    <string name="error_camera">No se puede abrir la cámara</string>
+    <string name="error_led">No se puede encender la linterna</string>
 </resources>
